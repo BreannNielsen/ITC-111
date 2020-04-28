@@ -17,6 +17,12 @@
             color: black;
             padding: 10px;
         }
+        #form {
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
 
     </style>
 
@@ -29,14 +35,29 @@
         </header>
         <section>
             <form action="formsphp.php" method="POST">
+                <div id="form">
+                    <div id="label">
+                        <label>Username</label>
+                    </div>
+                    <input type="text" name="userName">
+                    <br>
+                    <div id="label">
+                        <label>Password</label>
+                    </div>
+                    <input type="password" name="password">
+                    <br>
+                    <br>
+                    <div>
+                        <a href="#">Forgot Username or Password</a>
+                        <br>
+                        <input type="submit" name="submit">
+                    </div>
 
-                
+                    </div>
+                </div>
             </form>
 
-
         </section>
-    
-
     </div>
 </body>
 </html>

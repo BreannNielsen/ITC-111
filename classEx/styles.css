@@ -21,10 +21,3 @@
 .label {
     text-align: center;
 }
-
-.dim {
-    border-radius: 20px;
-    border: solid 1px black;
-    width: 75%;
-    height: 100px;
-}

@@ -22,7 +22,7 @@
     text-align: center;
 }
 
-div {
+.dim {
     border-radius: 20px;
     border: solid 1px black;
     width: 75%;

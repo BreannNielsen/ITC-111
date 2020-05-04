@@ -12,21 +12,28 @@
         }
         .center {
             margin: 10%;
-        }
-        header {
+            height: 50px;
             text-align: center;
         }
-        nav {
+        header, nav, footer {
+            text-align: center;
+        }
+        main {
+            margin: auto; height: 260px; 
+            background-color: rebeccapurple;
+            overflow: hidden;   
+        }
+        nav, footer {
             background-color: rgb(199, 115, 199);
             color:yellow;
         }
         section {
             text-align: center;
             height: 260px;
-            background-color: rgb(121, 121, 121)
-            float: left; 
+            background-color: rgb(121, 121, 121);
             width: 200px;
             height: 260px;
+            float: left;
         }
     </style>
 </head>
@@ -71,12 +78,15 @@
         <!-- Link Section End-->
 
         <!-- Content Section Start-->
-        <section class="center"
+        <section class="center">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempora accusantium voluptatem. Quia aut perspiciatis accusantium placeat, nesciunt suscipit? Ipsa animi nobis eligendi dignissimos assumenda ex soluta saepe neque pariatur?</p>
-
+        </section>
         <!-- Content Section End-->
 
     </main>
+    <footer>
+        <p>Copyright &copy; ITC-111</p>
+    </footer>
 
 </body>
 </html>

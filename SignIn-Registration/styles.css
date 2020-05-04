@@ -19,10 +19,15 @@
     padding: 10px;
 }
 
-.label {
+.registrationLabel {
     text-align: left;
     margin-left: 21px;
 }
+
+.signInLabel {
+    text-align: center;
+}
+
 #age {
     width: 35px;
 }

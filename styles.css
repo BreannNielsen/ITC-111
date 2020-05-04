@@ -1,31 +1,33 @@
-body {
-    width: 50%;
-    margin: 0px auto;
+.container {
+    border: 1px #000000 solid;
+    border-radius: 15px;
+    border: 1px #000000 solid;
+    margin: 0 auto; 
+    width: 20%;
+    overflow: hidden;
 }
-header {
-    background-color: purple;
+#mainHeader {
+    background-color: blueviolet;
+    text-align: center;
     color: black;
-    text-align: center;
-    padding: 5px;
-}
-nav {
-    text-align: center;
-    line-height: 30px;
-    background-color: white;
-    height: 300px;
-    width: 100px;
-    float: left;
-    padding: 5px;
-}
-section {
-    width: 350px;
-    float: left;
     padding: 10px;
-    margin: 0px 225px auto;
 }
-footer{
-    background-color: purple;
-    color: black;
+#formData {
+    margin: 0 auto;
     text-align: center;
-    padding: 5px;
+    color: black;
+    padding: 10px;
+}
+
+.registrationLabel {
+    text-align: left;
+    margin-left: 21px;
+}
+
+.signInLabel {
+    text-align: center;
+}
+
+#age {
+    width: 35px;
 }

@@ -18,13 +18,10 @@
     color: black;
     padding: 10px;
 }
-#formData2 {
-    text-align: center;
-    color: black;
-    padding: 10px;
-}
+
 .label {
-    text-align: center;
+    text-align: left;
+    margin-left: 21px;
 }
 #age {
     width: 35px;

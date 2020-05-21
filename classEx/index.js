@@ -27,6 +27,7 @@ if(lnk == "ce") {
     document.getElementById('divLeft_ALinks').style.display = "none";
     document.getElementById('divRight').style.display = "none";
 }
+}
 /*
 This function changed the text displayed by an element/tag. It takes a parameter 'txt'
 that is used to control what text to display depending on which link is clicked. This

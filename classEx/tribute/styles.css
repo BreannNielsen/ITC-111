@@ -1,0 +1,151 @@
+/* FOR VARIABLES */
+:root {
+    --primary-color: black;
+	--text-color: #ececec;
+	--highlight-color: #fffe03;
+}
+
+/* resetting the default of browser */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 62.5%;
+}
+
+#main {
+	background-color: var(--primary-color);
+	overflow: hidden; /*from collapsing the margin*/
+}
+
+/* the title of the page */
+#title {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+h1 {
+	text-transform: uppercase;
+	margin-top: 2rem;
+	font-size: 3.5rem;
+	color: var(--text-color);
+	letter-spacing: 0.8rem;
+}
+
+.sub {
+	text-transform: capitalize;
+	margin-top: 1rem;
+	font-size: 2rem;
+	letter-spacing: 0.6rem;
+	color: var(--text-color);
+}
+
+#img-div {
+	text-align: center;
+	margin: 2rem 0;
+	padding-top: 1rem;
+}
+
+.img-cover {
+	width: 80%;
+	height: 80%;
+	display: inline-block;
+	border-radius: 1.3rem;
+}
+
+img {
+	width: 98%;
+	padding: 0.7rem 0;
+	border-radius: 1.3rem;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+}
+
+#img-caption {
+	margin-top: 1.2rem;
+	margin-bottom: 0.6rem;
+	font-size: 1.2rem;
+	color: var(--text-color);
+	letter-spacing: 0.5rem;
+}
+
+#tribute-info {
+	text-align: center;
+}
+
+h2 {
+	text-transform: uppercase;
+	margin-top: 7rem;
+	font-size: 2.5rem;
+	color: var(--text-color);
+	letter-spacing: 0.5rem;
+}
+
+.story {
+	padding: 1rem;
+	text-align: justify;
+	font-size: 1rem;
+	color: var(--text-color);
+
+	line-height: 2rem;
+
+	column-count: 2;
+	column-gap: 3rem;
+	column-span: all;
+	column-rule: 0.1rem solid rgba(196, 196, 196, 0.301);
+}
+
+p span {
+	font-size: 1.6rem;
+}
+
+.story-cover {
+	display: inline-block;
+	margin: 2.0rem;
+	border-radius: 1.3rem;
+}
+
+#footer {
+	text-align: center;
+	margin: 5rem 0 3rem 0;
+}
+
+.link-info {
+	font-size: 1.5rem;
+	color: var(--text-color);
+	font-weight: 700;
+}
+
+.wiki-link:visited,
+.wiki-link:link {
+	text-decoration: none;
+	color: var(--highlight-color);
+	transition: all 0.5s;
+	padding: 0.4rem;
+}
+
+.wiki-link:active,
+.wiki-link:hover {
+	border-radius: 0.5rem;
+	box-shadow: 0.5rem 0.5rem 0.3rem #07090a, -0.5rem -0.5rem 0.3rem #15191c;
+}
+
+.link-cover {
+	display: inline-block;
+	backface-visibility: hidden;
+	transition: all 0.5s;
+}
+
+.link-cover:hover {
+	transform: scale(1.03);
+}

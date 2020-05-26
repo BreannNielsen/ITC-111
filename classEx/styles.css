@@ -63,6 +63,11 @@
             background-color: blue;
             width: 80%;
         }
+
+        #divLeft_Default{
+            display: block;
+        }
+        
         #divLeft_CELinks, #divLeft_ALinks{
             display: none;
         }

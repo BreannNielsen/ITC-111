@@ -10,6 +10,7 @@
         document.getElementById('divLeft_Default').style.display = "block";
         document.getElementById('divLeft_CELinks').style.display = "none";
         document.getElementById('divLeft_ALinks').style.display = "none";
+        document.getElementById('divLeft_RLinks').style.display = "none";
         document.getElementById('ls_Heading').innerHTML = "Home Link clicked. Default text displayed.";
         document.getElementById('ls_Heading').innerHTML = "ITC-111";
         document.getElementById('rs_Heading').innerHTML = "Intro to Programming <br>w/HTML, CSS & JavaScript</a>";
@@ -18,6 +19,7 @@
         document.getElementById('divLeft_Default').style.display = "none";
         document.getElementById('divLeft_CELinks').style.display = "block";
         document.getElementById('divLeft_ALinks').style.display = "none";
+        document.getElementById('divLeft_RLinks').style.display = "none";
         document.getElementById('ls_Heading').innerHTML = "Default content for Class Exercise Link.";
         document.getElementById('ls_Heading').innerHTML = "Class Exercise Links";
         document.getElementById('rs_Heading').innerHTML = "Exercise Description";
@@ -26,9 +28,19 @@
         document.getElementById('divLeft_Default').style.display = "none";
         document.getElementById('divLeft_CELinks').style.display = "none";
         document.getElementById('divLeft_ALinks').style.display = "block";
+        document.getElementById('divLeft_RLinks').style.display = "none";
         document.getElementById('ls_Heading').innerHTML = "Default description for Assignments Link.";
         document.getElementById('ls_Heading').innerHTML = "Assignments";
         document.getElementById('rs_Heading').innerHTML = "Assignment Description";
+
+    }else if (lnk == 'resource'){
+        document.getElementById('divLeft_Default').style.display = "none";
+        document.getElementById('divLeft_CELinks').style.display = "none";
+        document.getElementById('divLeft_ALinks').style.display = "none";
+        document.getElementById('divLeft_RLinks').style.display = "block";
+        document.getElementById('ls_Heading').innerHTML = "Default description for Resources Link.";
+        document.getElementById('ls_Heading').innerHTML = "Resources";
+        document.getElementById('rs_Heading').innerHTML = "Resource Description";
 
     }else{
         document.getElementById('divLeft_Default').style.display = "block";

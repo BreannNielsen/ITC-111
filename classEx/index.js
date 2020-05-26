@@ -11,7 +11,7 @@
         document.getElementById('divLeft_CELinks').style.display = "none";
         document.getElementById('divLeft_ALinks').style.display = "none";
         document.getElementById('divRight').style.display = "none";
-        document.getElementById('ls_Heading').innerHTML = "Class Exercises";
+        document.getElementById('ls_Heading').innerHTML = "Home Link clicked. Default text displayed.";
         document.getElementById('rs_Heading').innerHTML = "Exercise Description";
     }else if (lnk == 'classEx'){
         document.getElementById('divLeft_Default').style.display = "none";
@@ -35,10 +35,10 @@
         document.getElementById('divLeft_ALinks').style.display = "none";
         document.getElementById('divRight').style.display = "none";
     }
-    // The innerHTML of the div to the right is also changed
-    document.getElementById('divRight').innerHTML = 'Content for the "Link 1" link.';
-    // Any of an elements properties can be changed this way. Here the color is changed.
-    document.getElementById('divRight').style.color = 'red';
+    // // The innerHTML of the div to the right is also changed
+    // document.getElementById('divRight').innerHTML = 'Content for the "Link 1" link.';
+    // // Any of an elements properties can be changed this way. Here the color is changed.
+    // document.getElementById('divRight').style.color = 'red';
 }
 /*
     This function changed the text displayed by an element/tag. It takes a parameter 'txt'

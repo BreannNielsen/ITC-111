@@ -12,14 +12,13 @@
         document.getElementById('divLeft_ALinks').style.display = "none";
         document.getElementById('divRight').style.display = "none";
         document.getElementById('ls_Heading').innerHTML = "Home Link clicked. Default text displayed.";
-        document.getElementById('rs_Heading').innerHTML = "Exercise Description";
     }else if (lnk == 'classEx'){
         document.getElementById('divLeft_Default').style.display = "none";
         document.getElementById('divLeft_CELinks').style.display = "block";
         document.getElementById('divLeft_ALinks').style.display = "none";
         document.getElementById('divRight').style.display = "none";
-        document.getElementById('ls_Heading').innerHTML = "Assignments";
-        document.getElementById('rs_Heading').innerHTML = "Assignment Brief";
+        document.getElementById('ls_Heading').innerHTML = "Class Exercises";
+        document.getElementById('rs_Heading').innerHTML = "Exercise Description";
 
     }else if (lnk == 'assign'){
         document.getElementById('divLeft_Default').style.display = "none";
@@ -27,7 +26,7 @@
         document.getElementById('divLeft_ALinks').style.display = "block";
         document.getElementById('divRight').style.display = "none";
         document.getElementById('ls_Heading').innerHTML = "Assignments";
-        document.getElementById('rs_Heading').innerHTML = "Assignment Brief";
+        document.getElementById('rs_Heading').innerHTML = "Assignment Description";
 
     }else{
         document.getElementById('divLeft_Default').style.display = "block";

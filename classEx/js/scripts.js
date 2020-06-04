@@ -19,7 +19,7 @@ function setOp(tag) {
     document.getElementById('display2').value = "";
 }
 
-function doMath(){
+function doMath() {
     val2 = document.getElementById('display2').value;
     var result;
     switch(val1.slice(-1)){
@@ -34,8 +34,17 @@ function doMath(){
         case '/':
             result = parseInt(val1) / parseInt(val2);
             break;
+        case 'sqrt':
+            // do square root math
+            break;
+        case 'pow':
+            // do exponent math 
+            break;
     }
 
     document.getElementById('display1').innerHTML = "";
     document.getElementById('display2').value = result;
+    val1 = null;
+    val2 = null;
+    result = null;
 }

@@ -34,12 +34,12 @@ function doMath() {
         case '/':
             result = parseInt(val1) / parseInt(val2);
             break;
-        case 'sqrt':
+        //case 'sqrt':
             // do square root math
-            break;
-        case 'pow':
+            //break;
+        //case 'pow':
             // do exponent math 
-            break;
+            //break;
     }
 
     document.getElementById('display1').innerHTML = "";

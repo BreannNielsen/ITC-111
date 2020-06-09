@@ -1,5 +1,3 @@
-// CODE EXPLAINED channel
-
 // Select the Elements
 const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
@@ -14,16 +12,16 @@ const LINE_THROUGH = "lineThrough";
 // Variables
 let LIST, id;
 
-// get item from localstorage
+// Get item from localstorage
 let data = localStorage.getItem("TODO");
 
-// check if data is not empty
+// Check if data is not empty
 if(data){
     LIST = JSON.parse(data);
-    id = LIST.length; // set the id to the last one in the list
-    loadList(LIST); // load the list to the user interface
+    id = LIST.length; // Set the id to the last one in the list
+    loadList(LIST); // Load the list to the user interface
 }else{
-    // if data isn't empty
+    // If data isn't empty
     LIST = [];
     id = 0;
 }
@@ -35,19 +33,19 @@ function loadList(array){
     });
 }
 
-// clear the local storage
+// Clear the local storage
 clear.addEventListener("click", function(){
     localStorage.clear();
     location.reload();
 });
 
-// Show todays date
+// Show today's date
 const options = {weekday : "long", month:"short", day:"numeric"};
 const today = new Date();
 
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
-// add to do function
+// Add to do function
 
 function addToDo(toDo, id, done, trash){
     
@@ -68,12 +66,12 @@ function addToDo(toDo, id, done, trash){
     list.insertAdjacentHTML(position, item);
 }
 
-// add an item to the list user the enter key
+// Add an item to the list user the enter key
 document.addEventListener("keyup",function(even){
     if(event.keyCode == 13){
         const toDo = input.value;
         
-        // if the input isn't empty
+        // If the input isn't empty
         if(toDo){
             addToDo(toDo, id, false, false);
             
@@ -84,7 +82,7 @@ document.addEventListener("keyup",function(even){
                 trash : false
             });
             
-            // add item to localstorage ( this code must be added where the LIST array is updated)
+            // Add item to localstorage (this code must be added where the LIST array is updated)
             localStorage.setItem("TODO", JSON.stringify(LIST));
             
             id++;
@@ -94,7 +92,7 @@ document.addEventListener("keyup",function(even){
 });
 
 
-// complete to do
+// Complete to do
 function completeToDo(element){
     element.classList.toggle(CHECK);
     element.classList.toggle(UNCHECK);
@@ -103,18 +101,18 @@ function completeToDo(element){
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
 
-// remove to do
+// Remove to do
 function removeToDo(element){
     element.parentNode.parentNode.removeChild(element.parentNode);
     
     LIST[element.id].trash = true;
 }
 
-// target the items created dynamically
+// Target the items created dynamically
 
 list.addEventListener("click", function(event){
-    const element = event.target; // return the clicked element inside list
-    const elementJob = element.attributes.job.value; // complete or delete
+    const element = event.target; // Return the clicked element inside list
+    const elementJob = element.attributes.job.value; // Complete or delete
     
     if(elementJob == "complete"){
         completeToDo(element);
@@ -122,7 +120,7 @@ list.addEventListener("click", function(event){
         removeToDo(element);
     }
     
-    // add item to localstorage ( this code must be added where the LIST array is updated)
+    // Add item to localstorage (this code must be added where the LIST array is updated)
     localStorage.setItem("TODO", JSON.stringify(LIST));
 });
 

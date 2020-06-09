@@ -19,10 +19,25 @@ let data = localStorage.getItem("TODO");
 if(data){
     LIST = JSON.parse(data);
     id = LIST.length; // set the id to the last one in the list
-    loadList(LIST); // load the list to the user
+    loadList(LIST); // load the list to the user interface
 }else{
     // if data isn't empty
+    LIST = [];
+    id = 0;
 }
+
+// Load items to the user's interface
+function loadList(array){
+    array.forEach(function(item){
+        addToDo(item.name, item.id, item.done, item.trash);
+    });
+}
+
+// Clear the local storage
+clear.addEventListener("click", function(){
+    localStorage.clear();
+    location.reload();
+});
 
 // Show today's date
 const options = {weekday : "long", month:"short", day:"numeric"};

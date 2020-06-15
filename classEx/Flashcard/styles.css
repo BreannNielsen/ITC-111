@@ -1,0 +1,66 @@
+.center{
+    margin: 0% auto;
+}
+.margin{
+    margin: 1px;
+}
+#main{
+    padding: 0;
+    border: 1x black solid;
+    background-color: azure;
+    width: 215px;
+    height: 300px;
+}
+p{
+    margin: 3px auto;
+}
+h3, input{
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 1% auto;
+    padding-top: 5%;
+    height: 8.5%;
+}
+header, section{
+    border: 1x black solid;
+    text-align: center;
+    width: 95%;
+}
+#targetImg{
+    position: relative;
+    height: 56%;
+
+}
+.trgWrd{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#pagination{
+    background-color: rgb(58,75,172);
+    overflow: hidden;
+}
+.pgBtn{
+    border: none;
+    color: white;
+    width: 20%;
+    float: left;
+}
+#flipWord{
+    border: none;
+    color: white;
+    width: 60%;
+    height: 12%;
+}
+#swapLangBT{
+    margin-top: 2%;
+    padding-top: 3px;
+    width: 95%;
+    height: 5%;
+}
+#swap{
+    width: 34%;
+}
